@@ -1,10 +1,6 @@
 package webdev.models;
 
-import java.sql.Clob;
-
 import javax.persistence.*;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Inheritance(strategy=InheritanceType.JOINED)

@@ -1,6 +1,5 @@
 package webdev.services;
 
-import java.sql.Clob;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
@@ -71,7 +70,6 @@ public class DiagramService {
 		if (oldDiagramOptional != null) {
 			diagram.setId(oldDiagramOptional.get().getId());
 		}
-		// Clob flowClob = new javax.sql.rowset.serial.SerialClob(flow.toCharArray());
 		diagram.setFlow(flow);
 		return diagramRepository.save(diagram);
 	}
